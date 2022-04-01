@@ -10,8 +10,6 @@
 }
 
 .container {
-  padding: 30px;
-  border: 1px solid black;
   display: flex;
   height: 900px;
   margin: auto;
@@ -46,7 +44,7 @@ img {
   bottom: 40px;
   display: inline-block;
   font-family: Norse;
-  font-size: 100px;
+  font-size: 15vmin;
   color: white;
 }
 .right {
@@ -65,8 +63,8 @@ img {
   background-color: rgb(247, 247, 247);
 }
 .top {
-  padding: 5rem 0 2.5rem 2.5rem;
-  font-size: 1.5rem;
+  padding: 4em 0 4.5vh 4vh;
+  font-size: 3vmin;
 }
 .top p {
   max-width: 90%;
@@ -127,8 +125,7 @@ button {
   border-radius: 10px;
   box-shadow: 1px 1px 3px black;
 }
-.bottom {
-}
+
 .bottom p {
   font-weight: 400;
   font-size: 1.3rem;
@@ -154,4 +151,19 @@ input:focus {
   outline-style: none;
   border: 1px solid blue;
   box-shadow: 0.5px 0.5px;
+}
+.error::after {
+  content: "*passwords do not match";
+  color: red;
+  font-weight: 300;
+}
+.error1 {
+  outline-style: none;
+  border: 1px solid red;
+}
+#password.error1,
+#confirmPass.error1 {
+  outline-style: none;
+  border: none;
+  border: 1px solid red;
 }

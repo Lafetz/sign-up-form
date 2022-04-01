@@ -11,7 +11,10 @@
     <div class="container">
       <div class="left">
         <div class="logo">
-          <img src="./odin.png" alt="odin logo" />
+          <div class="odin">
+            <img src="./odin.png" alt="odin logo" />
+            <p>ODIN</p>
+          </div>
         </div>
       </div>
       <div class="right">
@@ -30,31 +33,43 @@
             <span class="main">
               <span class="input">
                 <label for="Firstname">First Name</label>
-                <input type="text" id="Firstname" />
+                <input type="text" id="Firstname" placeholder=" " required />
               </span>
               <span class="input">
                 <label for="Lastname">Last Name</label>
-                <input type="text" id="Lastname" />
+                <input type="text" id="Lastname" placeholder=" " required />
               </span>
             </span>
             <span class="main">
               <span class="input">
                 <label for="Email">Email</label>
-                <input type="email" id="Email" />
+                <input
+                  type="email"
+                  id="Email"
+                  placeholder=" "
+                  title="Invalid email"
+                  required
+                />
               </span>
               <span class="input">
                 <label for="phonenumber">Phone Number</label>
-                <input type="number" id="phonenumber" />
+                <input type="tel" id="phonenumber" placeholder=" " required />
               </span>
             </span>
             <span class="main">
               <span class="input">
                 <label for="password">Password</label>
-                <input type="pasword" id="password" />
+                <input type="password" id="password" placeholder=" " required />
+                <div class="passMis"></div>
               </span>
               <span class="input">
                 <label for="confirmPass">Confirm Password</label>
-                <input type="password" id="confirmPass" />
+                <input
+                  type="password"
+                  id="confirmPass"
+                  placeholder=" "
+                  required
+                />
               </span>
             </span>
           </form>
